@@ -1,4 +1,4 @@
-hostPort: localhost:8082
+hostPort: 127.0.0.1:1099
 username: 
 password: 
 ssl: false
@@ -6,4 +6,4 @@ lowercaseOutputName: false
 lowercaseOutputLabelNames: false
 whitelistObjectNames: ["com.example.LogarithmResolver.jmx:*"]
 rules:
-  - pattern: 'com.example.LogarithmResolver.jmx<type=(\w+), name=(\w+)><>Value: (\d+)'
+  - pattern: '.*'
