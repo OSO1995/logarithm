@@ -6,4 +6,4 @@ ADD ${JAR_APP} LogarithmResolver.jar
 ADD ${JAR_JA} jmx_prometheus_javaagent.jar
 ADD ${JAR_JA_CONF} config.yaml
 EXPOSE 8080 8081 8082
-ENTRYPOINT ["java","-Djava.rmi.server.hostname=127.0.0.1","-Dcom.sun.management.jmxremote","-Dcom.sun.management.jmxremote.port=1099","-Dcom.sun.management.jmxremote.rmi.port=1099","-Dcom.sun.management.jmxremote.local.only=false","-Dcom.sun.management.jmxremote.authenticate=false","-Dcom.sun.management.jmxremote.ssl=false","-javaagent:./jmx_prometheus_javaagent.jar=8082:config.yaml","-jar","/LogarithmResolver.jar"]
+ENTRYPOINT ["java","-Djava.rmi.server.hostname=127.0.0.1","-Dcom.sun.management.jmxremote.port=1099","-Dcom.sun.management.jmxremote.rmi.port=1099","-Dcom.sun.management.jmxremote.authenticate=false","-Dcom.sun.management.jmxremote.ssl=false","-javaagent:./jmx_prometheus_javaagent.jar=8082:config.yaml","-jar","/LogarithmResolver.jar"]
