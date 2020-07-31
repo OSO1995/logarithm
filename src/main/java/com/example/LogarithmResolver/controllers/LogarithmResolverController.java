@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LogarithmResolverController {
 
-    private static FluentLogger LOG = FluentLogger.getLogger(LogarithmResolverController.class.getName(), "localhost", 24224);
+    private static FluentLogger LOG = FluentLogger.getLogger(LogarithmResolverController.class.getName());
 
     @Autowired
     private LogarithmResolverService logarithmService;
